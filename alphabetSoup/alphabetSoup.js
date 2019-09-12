@@ -32,8 +32,24 @@ var result = alphabetSoup("my string oh my");
 console.log(result) // "ghimmnorstyy"
 
 **/
+//Input: a string
+//Output: A string with letters in alphabetical order
+
+//Step 1: Create a variable to store our output 
+
+//Step 2: Split the string into an array so that each character is its own element 
+
+//Step 3: sort the array 
+
+//Step 4: join the array so that it turns back into a string
+
+//Step 5:Trim the string so that it removes all blank spaces
+
+//Step 6: Return the value of my string output
 
 function alphabetSoup(str) {
-	//Your code here
-	
+	var aSoup = str.split("").sort().join("");
+	return aSoup; 
 }
+ var result = alphabetSoup("indigo");
+ console.log(result)
