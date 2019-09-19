@@ -18,8 +18,26 @@
 // findLongestWord("What is the average airspeed velocity of an unladen swallow") should return 8.
 // findLongestWord("What if we try a super-long word such as otorhinolaryngology") should return 19.
 
-
+//Input: a string
+//Output: a number
+// We need to look at the length of each word and  we need to compare the length of each word with the others in the string. 
+// If a word is longer than the ne that comes before it, we will replace the value of its length.
+// Tools: a var to store the lenth of the longest string.
+//.split() to change our string into an array
+// For loop: run through the words. 
+// Conditional statement: check to see if the next word is longer than the length stored in variable.
+// If true, I want to replace the value of the variable with the length of the longer word.
+//
 function findLongestWord(str) {
-  //your code here
+  var strSplit = str.split(' ');
+ var longestWord = 0;
+ for(var i = 0; i < strSplit.length; i++){
+   
+   if(strSplit[i].length > longestWord){
+ longestWord = strSplit[i].length;
+    }
+ }
+ return longestWord;
 }
+console.log(findLongestWord("What if we try a super-long word such as otorhinolaryngology"));
 
