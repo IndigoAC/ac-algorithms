@@ -53,9 +53,9 @@ console.log(result) // "oH, hELLO!!"
 
 function swapCase(str) {
  var output = "";
- var array =str.split("");
-for(var i =0; i<array.length; i++){
-	if (array [i]=== array [i].toLowerCase()) {
+ var array = str.split("");
+for(var i =0; i< array.length; i++){
+	if (array [i] === array [i].toLowerCase()) {
 		output = output + array[i].toUpperCase();
 	} else {
 		changeCase = changeCase + userStr[i].toLowerCase();
